@@ -129,6 +129,13 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+MEDIA_ROOT = Path(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 CRISPY_TEMPLATES_PACK = 'bootstrap5'
 
 LOGIN_REDIRECT_URL = 'blog-home'
+
+LOGOUT_REDIRECT_URL = 'blog-home'
+
+LOGIN_URL = 'login'
